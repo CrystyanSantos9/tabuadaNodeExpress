@@ -1,0 +1,11 @@
+<%- include('../partials/header.ejs') %> 
+      <div class="starter-template">
+        <h1>Escolha um número</h1>
+        <p class="lead">Gere a tabuada de um número de 1 a 100.</p>
+        <ul>
+            <% numeros.map( i => { %>
+                <li><a href="/tabuadas/de/<%= i %>">Tabuada do <%= i %></a></li>
+            <% }) %>
+        </ul>
+      </div>
+<%- include('../partials/footer.ejs') %> 
